@@ -5,7 +5,7 @@ import utils from 'akili/src/utils';
 import { removeSong } from '../../lib/playlists';
 import { checkSelection } from '../../lib/system';
 import { downloadCacheSong, removeCacheSong, hasCache, trimCacheFromSong } from '../../lib/cache';
-import Sortable from '@shopify/draggable';
+import {Sortable} from '@shopify/draggable';
 
 export default class Playlist extends Akili.Component {
   static template = require('./playlist.html');

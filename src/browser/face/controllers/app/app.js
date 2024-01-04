@@ -166,13 +166,13 @@ export default class App extends Akili.Component {
         icon: 'fa fa-arrow-down',
         handler: this.exportConfig.bind(this)
       },      
-      {
-        text: 'Project repository',
-        icon: 'fab fa-github',
-        href: window.cordova? null: projectUrl,
-        handler: () => (window.cordova? window.open(projectUrl, '_system'): null),
-        blank: true
-      },
+      // {
+      //   text: 'Project repository',
+      //   icon: 'fab fa-github',
+      //   href: window.cordova? null: projectUrl,
+      //   handler: () => (window.cordova? window.open(projectUrl, '_system'): null),
+      //   blank: true
+      // },
       {
         text: 'Music storage',
         icon: 'fa fa-cloud',
