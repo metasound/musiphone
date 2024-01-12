@@ -1,1 +1,1 @@
-module.exports = Object.assign({}, require("metastocle/src/server/transports/express/midds"));
+module.exports = Object.assign({}, require("metastocle-ms/src/server/transports/express/midds"));

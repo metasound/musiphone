@@ -1,6 +1,6 @@
-# [Musiphone](https://github.com/ortexx/musiphone/) [alpha] [![npm version](https://badge.fury.io/js/musiphone.svg)](https://badge.fury.io/js/musiphone) [![Build status](https://github.com/ortexx/musiphone/workflows/build/badge.svg)](https://github.com/ortexx/musiphone/actions)
+# [Musiphone](https://github.com/metasound/musiphone/) [alpha] [![npm version](https://badge.fury.io/js/musiphone.svg)](https://badge.fury.io/js/musiphone) [![Build status](https://github.com/metasound/musiphone/workflows/build/badge.svg)](https://github.com/metasound/musiphone/actions)
 
-Musiphone is a decentralized music player based on [the museria project](https://github.com/ortexx/museria/).
+Musiphone is a decentralized music player based on [the museria project](https://github.com/metasound/museria-ms/).
 
 There is [an article here](https://ortex.medium.com/musiphone-a-decentralized-music-player-6b30ffe4d788) with an explanation. 
 
@@ -53,21 +53,21 @@ const Client = require('musiphone').Client;
 ```
 
 ## Browser client
-You can also use the client in a browser. Look at the description of [the spreadable library](https://github.com/ortexx/spreadable/#how-to-use-the-client-in-a-browser). In window you have __window.ClientMusiphone__ instead of __window.ClientSpreadable__. The prepared file name is __musiphone.client.js__.
+You can also use the client in a browser. Look at the description of [the spreadable library](https://github.com/metasound/spreadable-ms/#how-to-use-the-client-in-a-browser). In window you have __window.ClientMusiphone__ instead of __window.ClientSpreadable__. The prepared file name is __musiphone.client.js__.
 
 ## How to use it via the command line
-Look at the description of [the spreadable library](https://github.com/ortexx/spreadable/#how-to-use-it-via-the-command-line). You only need to change everywhere **spreadable** word to **musiphone**.
+Look at the description of [the spreadable library](https://github.com/metasound/spreadable-ms/#how-to-use-it-via-the-command-line). You only need to change everywhere **spreadable** word to **musiphone**.
 
 ## How it works
 
-There are two sides to work with. On the server side the library allows you to create a decentralized network for storing music playlists based on [the metastocle data storage](https://github.com/ortexx/metastocle/). When you run the node, it is required to specify what kind of music storage clients will connect to, using __musicStorageAddress__ option. It can be a node address of any network that uses [the museria library](https://github.com/ortexx/museria/). When you add a playlist to the database, it gets a unique hash that you can use to get it later. On the client side it is a player where we manage all that stuff: creating playlists, sharing them with your friends, listening to music and so on. Currently, the player can be used in the browser and android smartphones.
+There are two sides to work with. On the server side the library allows you to create a decentralized network for storing music playlists based on [the metastocle data storage](https://github.com/metasound/metastocle-ms/). When you run the node, it is required to specify what kind of music storage clients will connect to, using __musicStorageAddress__ option. It can be a node address of any network that uses [the museria library](https://github.com/metasound/museria-ms/). When you add a playlist to the database, it gets a unique hash that you can use to get it later. On the client side it is a player where we manage all that stuff: creating playlists, sharing them with your friends, listening to music and so on. Currently, the player can be used in the browser and android smartphones.
 
 ## Browser player
-To use browser version of the player you only need to find and open any available musiphone node address. It will look like a regular website. You can use [the player version](https://github.com/ortexx/museria-player/) based on [the global music storage](https://github.com/ortexx/museria-global/).
+To use browser version of the player you only need to find and open any available musiphone node address. It will look like a regular website. You can use [the player version](https://github.com/metasound/museria-player/) based on [the global music storage](https://github.com/metasound/museria-global/).
 
 ## Android player
-You can get prepared apk/aab files from [./dist/android](https://github.com/ortexx/musiphone/tree/master/dist/android). To build an android application by yourself, you have to install all the necessary dependencies and compile the application via [cordova](https://cordova.apache.org/).
-All the necessary scripts you can find in the project [./package.json](https://github.com/ortexx/musiphone/blob/master/package.json).
+You can get prepared apk/aab files from [./dist/android](https://github.com/metasound/musiphone/tree/master/dist/android). To build an android application by yourself, you have to install all the necessary dependencies and compile the application via [cordova](https://cordova.apache.org/).
+All the necessary scripts you can find in the project [./package.json](https://github.com/metasound/musiphone/blob/master/package.json).
 The only option to pass for building is an API address. It is necessary for the application to know where to connect for working. You can specify  __MUSIPHONE_API_ADDRESS__ environment variable. If you don't pass it, the user will have to set it up in the app. The value can be any musiphone node address in your network:
 
 `MUSIPHONE_API_ADDRESS=192.168.0.100:2790 npm run make-mobile`.
@@ -94,13 +94,13 @@ There are two types of links:
 The maximum size of a playlist is 100 kb, by default. You can change it using the __playlist.maxSize__ option.
 
 ## What are the requirements
-Look at [the metastocle requirements](https://github.com/ortexx/metastocle/#what-are-the-requirements).
+Look at [the metastocle requirements](https://github.com/metasound/metastocle-ms/#what-are-the-requirements).
 
 ## Node configuration
 
 When you create an instance of the node you can pass options below. Only specific options of this library are described here, without considering the options of the parent classes.
 
-* {object} __[server]__ - section that responds for [server settings](https://github.com/ortexx/spreadable#node-configuration).
+* {object} __[server]__ - section that responds for [server settings](https://github.com/metasound/spreadable#node-configuration).
 
 * {string|number} __[server.staticMaxAge]__ - maximum age for static files.
 
@@ -108,7 +108,7 @@ When you create an instance of the node you can pass options below. Only specifi
 
 * {number|string} __[playlist.maxSize="100kb"]__ - maximum playlist size.
 
-* {number|string} __[playlist.collection]__ - playlist [collection settings](https://github.com/ortexx/metastocle#collection-configuration).
+* {number|string} __[playlist.collection]__ - playlist [collection settings](https://github.com/metasound/metastocle#collection-configuration).
 
 ## Client interface
 
@@ -135,4 +135,4 @@ If necessary, you have the opportunity to export playlists from one server to an
 * Use the song export feature: run ``` node.exportPlaylists() ``` method or via the command line as ``` musiphone -a exportPlaylists -n 2.2.2.2:2790 ```.
 
 ## Contribution
-If you face a bug or have an idea how to improve the library, create an issue on github. In order to fix something or add new code yourself, fork the library, make changes and create a pull request to the master branch. Don't forget about tests in this case. Also you can join [the project on github](https://github.com/ortexx/musiphone/projects/1).
+If you face a bug or have an idea how to improve the library, create an issue on github. In order to fix something or add new code yourself, fork the library, make changes and create a pull request to the master branch. Don't forget about tests in this case. Also you can join [the project on github](https://github.com/metasound/musiphone/projects/1).

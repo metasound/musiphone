@@ -1,1 +1,1 @@
-module.exports = Object.assign({}, require('metastocle/src/errors'));
+module.exports = Object.assign({}, require('metastocle-ms/src/errors'));

@@ -1,4 +1,4 @@
-const ClientMetastocle = require('metastocle/src/client')();
+const ClientMetastocle = require('metastocle-ms/src/client')();
 const utils = require('./utils');
 const errors = require('./errors');
 const pack = require('../package.json');

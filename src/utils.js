@@ -1,4 +1,4 @@
-const mtUtils = require('metastocle/src/utils');
+const mtUtils = require('metastocle-ms/src/utils');
 const utils = Object.assign({}, mtUtils);
 
 /**

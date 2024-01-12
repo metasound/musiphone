@@ -1,7 +1,7 @@
 /*!
  * musiphone client
  * @version 0.2.33
- * {@link https://github.com/ortexx/musiphone}
+ * {@link https://github.com/metasound/musiphone}
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -12632,17 +12632,17 @@ module.exports = values;
 
 /***/ }),
 
-/***/ "./node_modules/metastocle/src/client.js":
+/***/ "./node_modules/metastocle-ms/src/client.js":
 /*!***********************************************!*\
-  !*** ./node_modules/metastocle/src/client.js ***!
+  !*** ./node_modules/metastocle-ms/src/client.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 const merge = __webpack_require__(/*! lodash/merge */ "./node_modules/lodash/merge.js");
-const Client = __webpack_require__(/*! spreadable/src/client */ "./node_modules/spreadable/src/client.js")();
-const utils = __webpack_require__(/*! ./utils */ "./node_modules/metastocle/src/utils.js");
-const errors = __webpack_require__(/*! ./errors */ "./node_modules/metastocle/src/errors.js");
-const pack = __webpack_require__(/*! ../package.json */ "./node_modules/metastocle/package.json");
+const Client = __webpack_require__(/*! spreadable-ms/src/client */ "./node_modules/spreadable-ms/src/client.js")();
+const utils = __webpack_require__(/*! ./utils */ "./node_modules/metastocle-ms/src/utils.js");
+const errors = __webpack_require__(/*! ./errors */ "./node_modules/metastocle-ms/src/errors.js");
+const pack = __webpack_require__(/*! ../package.json */ "./node_modules/metastocle-ms/package.json");
 
 module.exports = (Parent) => {
   /**
@@ -12803,30 +12803,30 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/metastocle/src/errors.js":
+/***/ "./node_modules/metastocle-ms/src/errors.js":
 /*!***********************************************!*\
-  !*** ./node_modules/metastocle/src/errors.js ***!
+  !*** ./node_modules/metastocle-ms/src/errors.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = Object.assign({}, __webpack_require__(/*! spreadable/src/errors */ "./node_modules/spreadable/src/errors.js"));
+module.exports = Object.assign({}, __webpack_require__(/*! spreadable-ms/src/errors */ "./node_modules/spreadable-ms/src/errors.js"));
 
 
 /***/ }),
 
-/***/ "./node_modules/metastocle/src/utils.js":
+/***/ "./node_modules/metastocle-ms/src/utils.js":
 /*!**********************************************!*\
-  !*** ./node_modules/metastocle/src/utils.js ***!
+  !*** ./node_modules/metastocle-ms/src/utils.js ***!
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const utils = Object.assign({}, __webpack_require__(/*! spreadable/src/utils */ "./node_modules/spreadable/src/utils.js"));
+const utils = Object.assign({}, __webpack_require__(/*! spreadable-ms/src/utils */ "./node_modules/spreadable-ms/src/utils.js"));
 const merge = __webpack_require__(/*! lodash/merge */ "./node_modules/lodash/merge.js");
 const orderBy = __webpack_require__(/*! lodash/orderBy */ "./node_modules/lodash/orderBy.js");
 const pickBy = __webpack_require__(/*! lodash/pickBy */ "./node_modules/lodash/pickBy.js");
 const pick = __webpack_require__(/*! lodash/pick */ "./node_modules/lodash/pick.js");
 const get = __webpack_require__(/*! lodash/get */ "./node_modules/lodash/get.js");
-const errors = __webpack_require__(/*! ./errors */ "./node_modules/metastocle/src/errors.js");
+const errors = __webpack_require__(/*! ./errors */ "./node_modules/metastocle-ms/src/errors.js");
 
 /**
  * Class to handle documents: to filter, order, limit and etc.
@@ -14479,9 +14479,9 @@ module.exports = function setFunctionLength(fn, length) {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/node_modules/form-data/lib/browser.js":
+/***/ "./node_modules/spreadable-ms/node_modules/form-data/lib/browser.js":
 /*!***********************************************************************!*\
-  !*** ./node_modules/spreadable/node_modules/form-data/lib/browser.js ***!
+  !*** ./node_modules/spreadable-ms/node_modules/form-data/lib/browser.js ***!
   \***********************************************************************/
 /***/ ((module) => {
 
@@ -14491,9 +14491,9 @@ module.exports = typeof self == 'object' ? self.FormData : window.FormData;
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/node_modules/ms/index.js":
+/***/ "./node_modules/spreadable-ms/node_modules/ms/index.js":
 /*!**********************************************************!*\
-  !*** ./node_modules/spreadable/node_modules/ms/index.js ***!
+  !*** ./node_modules/spreadable-ms/node_modules/ms/index.js ***!
   \**********************************************************/
 /***/ ((module) => {
 
@@ -14663,9 +14663,9 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/browser/mock/index.js":
+/***/ "./node_modules/spreadable-ms/src/browser/mock/index.js":
 /*!***********************************************************!*\
-  !*** ./node_modules/spreadable/src/browser/mock/index.js ***!
+  !*** ./node_modules/spreadable-ms/src/browser/mock/index.js ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -14673,9 +14673,9 @@ module.exports = {};
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/client.js":
+/***/ "./node_modules/spreadable-ms/src/client.js":
 /*!***********************************************!*\
-  !*** ./node_modules/spreadable/src/client.js ***!
+  !*** ./node_modules/spreadable-ms/src/client.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -14683,16 +14683,16 @@ module.exports = {};
 const merge = __webpack_require__(/*! lodash/merge */ "./node_modules/lodash/merge.js");
 const shuffle = __webpack_require__(/*! lodash/shuffle */ "./node_modules/lodash/shuffle.js");
 const fetch = __webpack_require__(/*! node-fetch */ "./node_modules/node-fetch/browser.js");
-const FormData = __webpack_require__(/*! form-data */ "./node_modules/spreadable/node_modules/form-data/lib/browser.js");
-const https = __webpack_require__(/*! https */ "./node_modules/spreadable/src/browser/mock/index.js");
+const FormData = __webpack_require__(/*! form-data */ "./node_modules/spreadable-ms/node_modules/form-data/lib/browser.js");
+const https = __webpack_require__(/*! https */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
 const qs = __webpack_require__(/*! querystring */ "./node_modules/querystring-es3/index.js");
-const utils = __webpack_require__(/*! ./utils */ "./node_modules/spreadable/src/utils.js");
-const errors = __webpack_require__(/*! ./errors */ "./node_modules/spreadable/src/errors.js");
-const ms = __webpack_require__(/*! ms */ "./node_modules/spreadable/node_modules/ms/index.js");
-const LoggerConsole = __webpack_require__(/*! ./logger/transports/console */ "./node_modules/spreadable/src/logger/transports/console/index.js")();
-const TaskInterval = __webpack_require__(/*! ./task/transports/interval */ "./node_modules/spreadable/src/task/transports/interval/index.js")();
-const Service = __webpack_require__(/*! ./service */ "./node_modules/spreadable/src/service.js")();
-const pack = __webpack_require__(/*! ../package.json */ "./node_modules/spreadable/package.json");
+const utils = __webpack_require__(/*! ./utils */ "./node_modules/spreadable-ms/src/utils.js");
+const errors = __webpack_require__(/*! ./errors */ "./node_modules/spreadable-ms/src/errors.js");
+const ms = __webpack_require__(/*! ms */ "./node_modules/spreadable-ms/node_modules/ms/index.js");
+const LoggerConsole = __webpack_require__(/*! ./logger/transports/console */ "./node_modules/spreadable-ms/src/logger/transports/console/index.js")();
+const TaskInterval = __webpack_require__(/*! ./task/transports/interval */ "./node_modules/spreadable-ms/src/task/transports/interval/index.js")();
+const Service = __webpack_require__(/*! ./service */ "./node_modules/spreadable-ms/src/service.js")();
+const pack = __webpack_require__(/*! ../package.json */ "./node_modules/spreadable-ms/package.json");
 
 module.exports = (Parent) => {
   /**
@@ -15182,9 +15182,9 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/errors.js":
+/***/ "./node_modules/spreadable-ms/src/errors.js":
 /*!***********************************************!*\
-  !*** ./node_modules/spreadable/src/errors.js ***!
+  !*** ./node_modules/spreadable-ms/src/errors.js ***!
   \***********************************************/
 /***/ ((module) => {
 
@@ -15219,16 +15219,16 @@ module.exports.NotFoundError = class NotFoundError extends Error {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/logger/transports/console/index.js":
+/***/ "./node_modules/spreadable-ms/src/logger/transports/console/index.js":
 /*!************************************************************************!*\
-  !*** ./node_modules/spreadable/src/logger/transports/console/index.js ***!
+  !*** ./node_modules/spreadable-ms/src/logger/transports/console/index.js ***!
   \************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var console = __webpack_require__(/*! ./node_modules/console-browserify/index.js */ "./node_modules/console-browserify/index.js");
-const Logger = __webpack_require__(/*! ../logger */ "./node_modules/spreadable/src/logger/transports/logger/index.js")();
-const chalk = __webpack_require__(/*! chalk */ "./node_modules/spreadable/src/browser/mock/index.js");
-const utils = __webpack_require__(/*! ../../../utils */ "./node_modules/spreadable/src/utils.js");
+const Logger = __webpack_require__(/*! ../logger */ "./node_modules/spreadable-ms/src/logger/transports/logger/index.js")();
+const chalk = __webpack_require__(/*! chalk */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const utils = __webpack_require__(/*! ../../../utils */ "./node_modules/spreadable-ms/src/utils.js");
 
 module.exports = (Parent) => {
   /**
@@ -15261,13 +15261,13 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/logger/transports/logger/index.js":
+/***/ "./node_modules/spreadable-ms/src/logger/transports/logger/index.js":
 /*!***********************************************************************!*\
-  !*** ./node_modules/spreadable/src/logger/transports/logger/index.js ***!
+  !*** ./node_modules/spreadable-ms/src/logger/transports/logger/index.js ***!
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const Service = __webpack_require__(/*! ../../../service */ "./node_modules/spreadable/src/service.js")();
+const Service = __webpack_require__(/*! ../../../service */ "./node_modules/spreadable-ms/src/service.js")();
 
 module.exports = (Parent) => {
   /**
@@ -15375,9 +15375,9 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/service.js":
+/***/ "./node_modules/spreadable-ms/src/service.js":
 /*!************************************************!*\
-  !*** ./node_modules/spreadable/src/service.js ***!
+  !*** ./node_modules/spreadable-ms/src/service.js ***!
   \************************************************/
 /***/ ((module) => {
 
@@ -15532,14 +15532,14 @@ module.exports = () => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/task/transports/interval/index.js":
+/***/ "./node_modules/spreadable-ms/src/task/transports/interval/index.js":
 /*!***********************************************************************!*\
-  !*** ./node_modules/spreadable/src/task/transports/interval/index.js ***!
+  !*** ./node_modules/spreadable-ms/src/task/transports/interval/index.js ***!
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const Task = __webpack_require__(/*! ../task */ "./node_modules/spreadable/src/task/transports/task/index.js")();
-const utils = __webpack_require__(/*! ../../../utils */ "./node_modules/spreadable/src/utils.js");
+const Task = __webpack_require__(/*! ../task */ "./node_modules/spreadable-ms/src/task/transports/task/index.js")();
+const utils = __webpack_require__(/*! ../../../utils */ "./node_modules/spreadable-ms/src/utils.js");
 
 module.exports = (Parent) => {
   /**
@@ -15574,14 +15574,14 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/task/transports/task/index.js":
+/***/ "./node_modules/spreadable-ms/src/task/transports/task/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/spreadable/src/task/transports/task/index.js ***!
+  !*** ./node_modules/spreadable-ms/src/task/transports/task/index.js ***!
   \*******************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 const merge = __webpack_require__(/*! lodash/merge */ "./node_modules/lodash/merge.js");
-const Service = __webpack_require__(/*! ../../../service */ "./node_modules/spreadable/src/service.js")();
+const Service = __webpack_require__(/*! ../../../service */ "./node_modules/spreadable-ms/src/service.js")();
 
 module.exports = (Parent) => {
   /**
@@ -15742,26 +15742,26 @@ module.exports = (Parent) => {
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/src/utils.js":
+/***/ "./node_modules/spreadable-ms/src/utils.js":
 /*!**********************************************!*\
-  !*** ./node_modules/spreadable/src/utils.js ***!
+  !*** ./node_modules/spreadable-ms/src/utils.js ***!
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var process = __webpack_require__(/*! ./node_modules/process/browser.js */ "./node_modules/process/browser.js");
-const validateIP = __webpack_require__(/*! validate-ip-node */ "./node_modules/spreadable/src/browser/mock/index.js");
+const validateIP = __webpack_require__(/*! validate-ip-node */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
 const bytes = __webpack_require__(/*! bytes */ "./node_modules/bytes/index.js");
-const ms = __webpack_require__(/*! ms */ "./node_modules/spreadable/node_modules/ms/index.js");
-const os = __webpack_require__(/*! os */ "./node_modules/spreadable/src/browser/mock/index.js");
-const fse = __webpack_require__(/*! fs-extra */ "./node_modules/spreadable/src/browser/mock/index.js");
-const path = __webpack_require__(/*! path */ "./node_modules/spreadable/src/browser/mock/index.js");
+const ms = __webpack_require__(/*! ms */ "./node_modules/spreadable-ms/node_modules/ms/index.js");
+const os = __webpack_require__(/*! os */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const fse = __webpack_require__(/*! fs-extra */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const path = __webpack_require__(/*! path */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
 const uniqBy = __webpack_require__(/*! lodash/uniqBy */ "./node_modules/lodash/uniqBy.js");
-const dns = __webpack_require__(/*! dns */ "./node_modules/spreadable/src/browser/mock/index.js");
-const tcpPortUsed = __webpack_require__(/*! tcp-port-used */ "./node_modules/spreadable/src/browser/mock/index.js");
-const publicIp = __webpack_require__(/*! qiao-get-ip */ "./node_modules/spreadable/src/browser/mock/index.js");
-const crypto = __webpack_require__(/*! crypto */ "./node_modules/spreadable/src/browser/mock/index.js");
-const ip6addr = __webpack_require__(/*! ip6addr */ "./node_modules/spreadable/src/browser/mock/index.js");
-const errors = __webpack_require__(/*! ./errors */ "./node_modules/spreadable/src/errors.js");
+const dns = __webpack_require__(/*! dns */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const tcpPortUsed = __webpack_require__(/*! tcp-port-used */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const publicIp = __webpack_require__(/*! qiao-get-ip */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const crypto = __webpack_require__(/*! crypto */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const ip6addr = __webpack_require__(/*! ip6addr */ "./node_modules/spreadable-ms/src/browser/mock/index.js");
+const errors = __webpack_require__(/*! ./errors */ "./node_modules/spreadable-ms/src/errors.js");
 
 const utils = {
   domainValidationRegex: /^localhost|[\p{L}\p{N}-][\p{L}\p{N}-]{1,61}[\p{L}\p{N}](?:\.[\p{L}]{2,})+$/iu,
@@ -17764,7 +17764,7 @@ module.exports = function whichTypedArray(value) {
   \***********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const ClientMetastocle = __webpack_require__(/*! metastocle/src/client */ "./node_modules/metastocle/src/client.js")();
+const ClientMetastocle = __webpack_require__(/*! metastocle-ms/src/client */ "./node_modules/metastocle-ms/src/client.js")();
 const utils = __webpack_require__(/*! ./utils */ "./src/utils.js");
 const errors = __webpack_require__(/*! ./errors */ "./src/errors.js");
 const pack = __webpack_require__(/*! ../package.json */ "./package.json");
@@ -17820,7 +17820,7 @@ module.exports = (Parent) => {
   \***********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = Object.assign({}, __webpack_require__(/*! metastocle/src/errors */ "./node_modules/metastocle/src/errors.js"));
+module.exports = Object.assign({}, __webpack_require__(/*! metastocle-ms/src/errors */ "./node_modules/metastocle-ms/src/errors.js"));
 
 /***/ }),
 
@@ -17831,7 +17831,7 @@ module.exports = Object.assign({}, __webpack_require__(/*! metastocle/src/errors
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* provided dependency */ var Buffer = __webpack_require__(/*! ./node_modules/buffer/index.js */ "./node_modules/buffer/index.js")["Buffer"];
-const mtUtils = __webpack_require__(/*! metastocle/src/utils */ "./node_modules/metastocle/src/utils.js");
+const mtUtils = __webpack_require__(/*! metastocle-ms/src/utils */ "./node_modules/metastocle-ms/src/utils.js");
 const utils = Object.assign({}, mtUtils);
 
 /**
@@ -17890,25 +17890,25 @@ module.exports = function availableTypedArrays() {
 
 /***/ }),
 
-/***/ "./node_modules/metastocle/package.json":
+/***/ "./node_modules/metastocle-ms/package.json":
 /*!**********************************************!*\
-  !*** ./node_modules/metastocle/package.json ***!
+  !*** ./node_modules/metastocle-ms/package.json ***!
   \**********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"metastocle","version":"0.2.31","description":"Decentralized data storage","main":"./src/index.js","bin":{"metastocle":"./bin/index.js"},"author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/ortexx/metastocle","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=20000","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-ci":"npm run eslint && npm run test && npm run build-client-prod"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["metastocle","meta","nosql","data","storage","network","distributed","decentralized","decentralization","distribution","information"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","@babel/plugin-transform-runtime":"^7.13.15","@babel/preset-env":"^7.13.15","babel-loader":"^8.2.2","chai":"^4.3.4","cross-env":"^7.0.3","css-minimizer-webpack-plugin":"^3.0.2","eslint":"^7.24.0","eslint-webpack-plugin":"^2.5.3","husky":"^4.3.8","mini-css-extract-plugin":"^1.4.1","mocha":"^9.1.3","node-polyfill-webpack-plugin":"^1.1.0","terser-webpack-plugin":"^5.0.0","webpack":"^5.31.2","webpack-cli":"^4.6.0","yargs":"^16.2.0"},"dependencies":{"chalk":"^3.0.0","fs-extra":"^9.1.0","lodash":"^4.17.21","node-fetch":"^2.6.1","object-sizeof":"^1.6.1","spreadable":"https://github.com/metasound/spreadable.git","uuid":"^3.3.3"},"repository":{"type":"git","url":"https://github.com/ortexx/metastocle"},"engines":{"node":">=10.13.0"}}');
+module.exports = JSON.parse('{"name":"metastocle","version":"0.2.31","description":"Decentralized data storage","main":"./src/index.js","bin":{"metastocle":"./bin/index.js"},"author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/metasound/metastocle","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=20000","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-ci":"npm run eslint && npm run test && npm run build-client-prod"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["metastocle","meta","nosql","data","storage","network","distributed","decentralized","decentralization","distribution","information"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","@babel/plugin-transform-runtime":"^7.13.15","@babel/preset-env":"^7.13.15","babel-loader":"^8.2.2","chai":"^4.3.4","cross-env":"^7.0.3","css-minimizer-webpack-plugin":"^3.0.2","eslint":"^7.24.0","eslint-webpack-plugin":"^2.5.3","husky":"^4.3.8","mini-css-extract-plugin":"^1.4.1","mocha":"^9.1.3","node-polyfill-webpack-plugin":"^1.1.0","terser-webpack-plugin":"^5.0.0","webpack":"^5.31.2","webpack-cli":"^4.6.0","yargs":"^16.2.0"},"dependencies":{"chalk":"^3.0.0","fs-extra":"^9.1.0","lodash":"^4.17.21","node-fetch":"^2.6.1","object-sizeof":"^1.6.1","spreadable":"https://github.com/metasound/spreadable.git","uuid":"^3.3.3"},"repository":{"type":"git","url":"https://github.com/metasound/metastocle"},"engines":{"node":">=10.13.0"}}');
 
 /***/ }),
 
-/***/ "./node_modules/spreadable/package.json":
+/***/ "./node_modules/spreadable-ms/package.json":
 /*!**********************************************!*\
-  !*** ./node_modules/spreadable/package.json ***!
+  !*** ./node_modules/spreadable-ms/package.json ***!
   \**********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"spreadable","version":"0.2.28","description":"Decentralized network mechanism","bin":{"spreadable":"./bin/index.js"},"main":"./src/index.js","author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/ortexx/spreadable","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=30000","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-ci":"npm run eslint && npm run test && npm run build-client-prod"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["spreadable","protocol","network","distributed","decentralized","decentralization","distribution","information","data"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","@babel/plugin-transform-runtime":"^7.13.15","@babel/preset-env":"^7.13.15","babel-loader":"^8.2.2","chai":"^4.3.4","cross-env":"^7.0.3","css-minimizer-webpack-plugin":"^3.0.2","eslint":"^7.29.0","eslint-webpack-plugin":"^2.5.4","husky":"^4.3.8","mini-css-extract-plugin":"^1.3.9","mocha":"^10.2.0","node-mocks-http":"^1.10.1","node-polyfill-webpack-plugin":"^1.1.0","selfsigned":"^2.0.0","terser-webpack-plugin":"^5.1.4","webpack":"^5.41.1","webpack-cli":"^4.7.2","yargs":"^17.0.1"},"dependencies":{"basic-auth":"^2.0.1","bytes":"^3.1.2","chalk":"^3.0.0","cli-spinner":"^0.2.10","compression":"^1.7.4","cookies":"^0.8.0","cors":"^2.8.5","cron":"^1.8.2","express":"^4.17.1","form-data":"^3.0.1","fs-extra":"^9.1.0","get-port":"^5.1.1","ip6addr":"^0.2.4","is-png":"^2.0.0","lodash":"^4.17.21","lokijs":"^1.5.10","ms":"^2.1.3","node-fetch":"^2.6.0","qiao-get-ip":"^0.2.5","sharp":"^0.30.7","signal-exit":"^3.0.3","tcp-port-used":"^1.0.2","text-to-svg":"^3.1.5","validate-ip-node":"^1.0.6"},"repository":{"type":"git","url":"https://github.com/ortexx/spreadable"},"engines":{"node":">=10.13.0"}}');
+module.exports = JSON.parse('{"name":"spreadable","version":"0.2.28","description":"Decentralized network mechanism","bin":{"spreadable":"./bin/index.js"},"main":"./src/index.js","author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/metasound/spreadable","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=30000","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-ci":"npm run eslint && npm run test && npm run build-client-prod"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["spreadable","protocol","network","distributed","decentralized","decentralization","distribution","information","data"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","@babel/plugin-transform-runtime":"^7.13.15","@babel/preset-env":"^7.13.15","babel-loader":"^8.2.2","chai":"^4.3.4","cross-env":"^7.0.3","css-minimizer-webpack-plugin":"^3.0.2","eslint":"^7.29.0","eslint-webpack-plugin":"^2.5.4","husky":"^4.3.8","mini-css-extract-plugin":"^1.3.9","mocha":"^10.2.0","node-mocks-http":"^1.10.1","node-polyfill-webpack-plugin":"^1.1.0","selfsigned":"^2.0.0","terser-webpack-plugin":"^5.1.4","webpack":"^5.41.1","webpack-cli":"^4.7.2","yargs":"^17.0.1"},"dependencies":{"basic-auth":"^2.0.1","bytes":"^3.1.2","chalk":"^3.0.0","cli-spinner":"^0.2.10","compression":"^1.7.4","cookies":"^0.8.0","cors":"^2.8.5","cron":"^1.8.2","express":"^4.17.1","form-data":"^3.0.1","fs-extra":"^9.1.0","get-port":"^5.1.1","ip6addr":"^0.2.4","is-png":"^2.0.0","lodash":"^4.17.21","lokijs":"^1.5.10","ms":"^2.1.3","node-fetch":"^2.6.0","qiao-get-ip":"^0.2.5","sharp":"^0.30.7","signal-exit":"^3.0.3","tcp-port-used":"^1.0.2","text-to-svg":"^3.1.5","validate-ip-node":"^1.0.6"},"repository":{"type":"git","url":"https://github.com/metasound/spreadable"},"engines":{"node":">=10.13.0"}}');
 
 /***/ }),
 
@@ -17919,7 +17919,7 @@ module.exports = JSON.parse('{"name":"spreadable","version":"0.2.28","descriptio
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"musiphone","version":"0.2.33","description":"Decentralized music player","main":"./src/index.js","bin":{"musiphone":"./bin/index.js"},"author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/ortexx/musiphone","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=30000","commit-code":"npm run eslint && npm run test","commit-browser":"npm run build-client-prod && npm run build-face-prod","commit-mobile":"npm run release-mobile && npm run release-mobile-prod","cordova-init-www":"cross-env-shell \\"if [ ! -d \'./www\' ]; then ln -s ./dist/face ./www; fi\\"","cordova-init-platforms":"cross-env-shell \\"if [ ! -d \'./platforms/android\' ]; then cordova platform add android; fi\\"","cordova-init":"npm run cordova-init-www && npm run cordova-init-platforms","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-face":"webpack --config=webpack.face.js","build-face-prod":"cross-env NODE_ENV=production webpack --config=webpack.face.js","build-mobile":"webpack --config=webpack.mobile.js","build-mobile-prod":"cross-env NODE_ENV=production webpack --config=webpack.mobile.js","build-ci":"npm run commit-code && npm run commit-browser && npm run commit-mobile","copy-mobile":"cross-env cp platforms/android/app/build/outputs/apk/debug/app-debug.apk dist/android/musiphone.debug.apk","copy-mobile-prod":"cross-env cp platforms/android/app/build/outputs/bundle/release/app-release.aab dist/android/musiphone.release.aab","release-mobile":"npm run cordova-init && cordova build --prod && npm run copy-mobile","release-mobile-prod":"npm run cordova-init && cordova build --prod --release && npm run copy-mobile-prod","make-mobile":"npm run build-mobile-prod && npm run release-mobile","make-mobile-prod":"npm run build-mobile-prod && npm run release-mobile-prod","run-mobile":"npm run make-mobile && cordova run","run-mobile-device":"npm run make-mobile && cordova run --device"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["music","player","playlist","song","audio","meta","data","storage","network","distributed","decentralized","decentralization","distribution","information"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","babel-loader":"^8.2.2","babel-preset-akili":"^2.0.7","chai":"^4.2.0","copy-webpack-plugin":"^6.4.1","cordova":"^11.1.0","cordova-android":"^11.0.0","cordova-plugin-androidx":"^2.0.0","cordova-plugin-background-mode":"^0.7.3","cordova-plugin-device":"^2.0.3","cordova-plugin-file":"^7.0.0","cordova-plugin-file-transfer":"github:apache/cordova-plugin-file-transfer","cordova-plugin-inappbrowser":"^5.0.0","cordova-plugin-media":"^6.0.0","cordova-plugin-music-controls2":"^3.0.7","cordova-plugin-network-information":"^3.0.0","cordova-plugin-splashscreen":"^6.0.0","cordova-plugin-x-socialsharing-android12":"^6.0.5","cordova-webintent":"github:cordova-misc/cordova-webintent","cross-env":"^7.0.3","css-loader":"^5.2.1","css-minimizer-webpack-plugin":"^3.0.2","cssnano":"^5.0.6","es6-promise-plugin":"^4.2.2","eslint":"^7.24.0","eslint-webpack-plugin":"^2.5.3","file-loader":"^6.2.0","html-loader":"^2.1.2","husky":"^4.3.7","mini-css-extract-plugin":"^1.3.9","mocha":"^10.2.0","node-gyp":"^8.4.1","node-polyfill-webpack-plugin":"^1.1.0","resolve-url-loader":"^5.0.0","sass":"^1.4.0","sass-loader":"^12.3.0","terser-webpack-plugin":"^5.0.0","webpack":"^5.31.2","webpack-cli":"^4.6.0"},"dependencies":{"@fortawesome/fontawesome-free":"^5.15.1","@shopify/draggable":"^1.1.3","akili":"^1.2.24","base64url":"^3.0.1","bytes":"^3.1.0","express":"^4.17.1","express-static-search":"^0.1.7","lodash":"^4.17.19","metastocle":"https://github.com/metasound/metastocle.git","museria":"https://github.com/metasound/museria.git","serve-favicon":"^2.5.0","slugify":"^1.4.6","smooth-scrollbar":"^8.5.3","spreadable":"https://github.com/metasound/spreadable.git","tippy.js":"^6.2.7"},"cordova":{"plugins":{"cordova-plugin-media":{},"cordova-plugin-splashscreen":{},"cordova-plugin-background-mode":{},"cordova-webintent":{},"cordova-plugin-device":{},"cordova-plugin-androidx":{},"cordova-plugin-file-transfer":{},"cordova-plugin-inappbrowser":{},"cordova-plugin-network-information":{},"cordova-plugin-x-socialsharing-android12":{},"cordova-plugin-music-controls2":{}},"platforms":["android"]},"repository":{"type":"git","url":"https://github.com/ortexx/musiphone"},"engines":{"node":">=10.13.0"}}');
+module.exports = JSON.parse('{"name":"musiphone","version":"0.2.33","description":"Decentralized music player","main":"./src/index.js","bin":{"musiphone":"./bin/index.js"},"author":{"name":"Alexander Balasyan","email":"mywebstreet@gmail.com"},"homepage":"https://github.com/metasound/musiphone","scripts":{"eslint":"eslint src bin test","test":"mocha ./test/index.js --timeout=30000","commit-code":"npm run eslint && npm run test","commit-browser":"npm run build-client-prod && npm run build-face-prod","commit-mobile":"npm run release-mobile && npm run release-mobile-prod","cordova-init-www":"cross-env-shell \\"if [ ! -d \'./www\' ]; then ln -s ./dist/face ./www; fi\\"","cordova-init-platforms":"cross-env-shell \\"if [ ! -d \'./platforms/android\' ]; then cordova platform add android; fi\\"","cordova-init":"npm run cordova-init-www && npm run cordova-init-platforms","build-client":"webpack --config=webpack.client.js","build-client-prod":"cross-env NODE_ENV=production webpack --config=webpack.client.js","build-face":"webpack --config=webpack.face.js","build-face-prod":"cross-env NODE_ENV=production webpack --config=webpack.face.js","build-mobile":"webpack --config=webpack.mobile.js","build-mobile-prod":"cross-env NODE_ENV=production webpack --config=webpack.mobile.js","build-ci":"npm run commit-code && npm run commit-browser && npm run commit-mobile","copy-mobile":"cross-env cp platforms/android/app/build/outputs/apk/debug/app-debug.apk dist/android/musiphone.debug.apk","copy-mobile-prod":"cross-env cp platforms/android/app/build/outputs/bundle/release/app-release.aab dist/android/musiphone.release.aab","release-mobile":"npm run cordova-init && cordova build --prod && npm run copy-mobile","release-mobile-prod":"npm run cordova-init && cordova build --prod --release && npm run copy-mobile-prod","make-mobile":"npm run build-mobile-prod && npm run release-mobile","make-mobile-prod":"npm run build-mobile-prod && npm run release-mobile-prod","run-mobile":"npm run make-mobile && cordova run","run-mobile-device":"npm run make-mobile && cordova run --device"},"husky":{"hooks":{"pre-commit":"npm run build-ci && git add ./dist/*"}},"keywords":["music","player","playlist","song","audio","meta","data","storage","network","distributed","decentralized","decentralization","distribution","information"],"license":"MIT","devDependencies":{"@babel/core":"^7.13.15","@babel/eslint-parser":"^7.13.14","babel-loader":"^8.2.2","babel-preset-akili":"^2.0.7","chai":"^4.2.0","copy-webpack-plugin":"^6.4.1","cordova":"^11.1.0","cordova-android":"^11.0.0","cordova-plugin-androidx":"^2.0.0","cordova-plugin-background-mode":"^0.7.3","cordova-plugin-device":"^2.0.3","cordova-plugin-file":"^7.0.0","cordova-plugin-file-transfer":"github:apache/cordova-plugin-file-transfer","cordova-plugin-inappbrowser":"^5.0.0","cordova-plugin-media":"^6.0.0","cordova-plugin-music-controls2":"^3.0.7","cordova-plugin-network-information":"^3.0.0","cordova-plugin-splashscreen":"^6.0.0","cordova-plugin-x-socialsharing-android12":"^6.0.5","cordova-webintent":"github:cordova-misc/cordova-webintent","cross-env":"^7.0.3","css-loader":"^5.2.1","css-minimizer-webpack-plugin":"^3.0.2","cssnano":"^5.0.6","es6-promise-plugin":"^4.2.2","eslint":"^7.24.0","eslint-webpack-plugin":"^2.5.3","file-loader":"^6.2.0","html-loader":"^2.1.2","husky":"^4.3.7","mini-css-extract-plugin":"^1.3.9","mocha":"^10.2.0","node-gyp":"^8.4.1","node-polyfill-webpack-plugin":"^1.1.0","resolve-url-loader":"^5.0.0","sass":"^1.4.0","sass-loader":"^12.3.0","terser-webpack-plugin":"^5.0.0","webpack":"^5.31.2","webpack-cli":"^4.6.0"},"dependencies":{"@fortawesome/fontawesome-free":"^5.15.1","@shopify/draggable":"^1.1.3","akili":"^1.2.24","base64url":"^3.0.1","bytes":"^3.1.0","express":"^4.17.1","express-static-search":"^0.1.7","lodash":"^4.17.19","metastocle":"https://github.com/metasound/metastocle.git","museria":"https://github.com/metasound/museria.git","serve-favicon":"^2.5.0","slugify":"^1.4.6","smooth-scrollbar":"^8.5.3","spreadable":"https://github.com/metasound/spreadable.git","tippy.js":"^6.2.7"},"cordova":{"plugins":{"cordova-plugin-media":{},"cordova-plugin-splashscreen":{},"cordova-plugin-background-mode":{},"cordova-webintent":{},"cordova-plugin-device":{},"cordova-plugin-androidx":{},"cordova-plugin-file-transfer":{},"cordova-plugin-inappbrowser":{},"cordova-plugin-network-information":{},"cordova-plugin-x-socialsharing-android12":{},"cordova-plugin-music-controls2":{}},"platforms":["android"]},"repository":{"type":"git","url":"https://github.com/metasound/musiphone"},"engines":{"node":">=10.13.0"}}');
 
 /***/ })
 

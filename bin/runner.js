@@ -1,1 +1,1 @@
-module.exports = require('metastocle/bin/runner');
+module.exports = require('metastocle-ms/bin/runner');

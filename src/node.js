@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const NodeMetastocle = require('metastocle/src/node')();
+const NodeMetastocle = require('metastocle-ms/src/node')();
 const CollectionMusiphone = require('./collection/transports/playlist')();
 const ServerExpressMuseria = require('./server/transports/express')();
 const utils = require('./utils');

@@ -153,7 +153,7 @@ export default class App extends Akili.Component {
   }
 
   setMenu() {
-    const projectUrl = 'https://github.com/ortexx/museria-player';
+    const projectUrl = 'https://github.com/metasound/museria-player';
     this.scope.menu = [
       {
         text: 'Load config',

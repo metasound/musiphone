@@ -1,1 +1,1 @@
-module.exports = Object.assign({}, require('metastocle/bin/utils'));
+module.exports = Object.assign({}, require('metastocle-ms/bin/utils'));

@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const argv = require('yargs').argv;
 const utils = require('./utils');
-const actions = Object.assign({}, require('metastocle/bin/actions'));
+const actions = Object.assign({}, require('metastocle-ms/bin/actions'));
 
 /**
  * Add the playlist

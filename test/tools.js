@@ -1,4 +1,4 @@
-const _tools = Object.assign({}, require('metastocle/test/tools'));
+const _tools = Object.assign({}, require('metastocle-ms/test/tools'));
 const tools =  Object.assign({}, _tools);
 
 /**

@@ -1,5 +1,5 @@
-const mtSchema = require('metastocle/src/schema');
-const maUtils = require('museria/src/utils');
+const mtSchema = require('metastocle-ms/src/schema');
+const maUtils = require('museria-ms/src/utils');
 const utils = require('./utils');
 const schema = Object.assign({}, mtSchema);
 
